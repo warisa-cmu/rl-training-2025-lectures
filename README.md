@@ -6,7 +6,7 @@
 
 ## Setip
 
--
+- [Windows](https://github.com/warisa-cmu/rl-training-2025-lectures/blob/main/src/T00_setup/windows.md)
 
 ## Introduction
 
