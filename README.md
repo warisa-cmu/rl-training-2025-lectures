@@ -2,7 +2,7 @@
 
 ## Lecture VDO Playlist
 
-- [RL Training 2025](#)
+- [RL Training 2025](https://www.youtube.com/playlist?list=PLNGLpHQhvGrvfreH3BPJkvWYCtrZTT-gL)
 
 ## Setup
 
