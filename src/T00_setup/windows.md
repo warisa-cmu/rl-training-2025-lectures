@@ -9,26 +9,35 @@
 
 - `Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope LocalMachine`
 
-## 2. Install `uv`
+## 2. Install `choco` and software
 
-- `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
-- Close and reopen powershell
+- `Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))`
 
-# 3. Install Python
+- Close and reopen with administrative right
+  - `choco install vscode -y`
+  - `choco install git -y`
+  - `choco install swig -y`
 
-- `uv python install 3.12`
+## 3. Install `uv` and Python
 
-# 4. Create virtual environment
+- Powershell with administrative right
+  - `powershell -ExecutionPolicy ByPass -c "irm https://astral.sh/uv/install.ps1 | iex"`
+- Close and reopen powershell (normal right)
 
-- `uv venv --python 3.12`
-- Activate the environment
+  - `uv python install 3.12`
+
+- Create virtual environment for normal usage (not for RL)
+  - `uv venv --python 3.12`
   - `~/.venv/Scripts/activate.ps1`
-- Install packages
-  - `uv pip install jupyterlab ipykernel pandas scikit-learn matplotlib seaborn openpyxl ruff notebook xlsxwriter`
+  - `uv pip install jupyterlab ipykernel pandas matplotlib seaborn openpyxl ruff notebook xlsxwriter`
 
-# VSCode
+## 4. Install `Build Tools for Visual Studio 2022`
 
-- Install `VSCode`
+- Visit https://visualstudio.microsoft.com/downloads/?q=build+tools#build-tools-for-visual-studio-2022
+- Install `Desktop development with C++` workload
+
+## 5. Configure VSCode
+
 - Install VSCode extensions
   - Python Extension Pack
   - Jupyter
@@ -37,25 +46,12 @@
   - `python.venvPath` -> `~`
   - `editor.formatOnSave` -> ✔️
 
-# Run python file
+## 6. Run RL codes
 
-- Create `hello.py`
-
-```python
-import pandas as pd
-
-print("Hello World")
-print(pd.__version__)
-```
-
-- Set "Workspace Environment"
-- Run file from the play button.
-- (Optionally) select formatter
-
-# Run Jupyter notebook
-
-- Create `hello.ipynb`
-- Click `Select Kernel` at the top right.
-- Click `+ Code` and type some code.
-- Click play button.
-- (Optionally) select formatter
+- Open powershell
+  - `cd ~/Desktop`
+  - `git clone https://github.com/warisa-cmu/rl-training-2025-codes.git`
+  - Open VSCode and set workspace to the newly created folder
+- Open VSCode terminal
+  - `uv sync`
+  - Try running the file in `src/T00_setup`
