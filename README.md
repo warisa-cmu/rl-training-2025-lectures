@@ -1,8 +1,9 @@
 # Lectures Topics
 
-## Lecture VDO Playlist
+## Resources
 
-- [RL Training 2025](https://www.youtube.com/playlist?list=PLNGLpHQhvGrvfreH3BPJkvWYCtrZTT-gL)
+- [VDO Lecture](https://www.youtube.com/playlist?list=PLNGLpHQhvGrvfreH3BPJkvWYCtrZTT-gL)
+- [Code repository](https://github.com/warisa-cmu/rl-training-2025-codes)
 
 ## Setup
 
