@@ -14,6 +14,11 @@
 - [HTML](src/T01_intro/T01.html)
 - [PDF](src/T01_intro/T01.pdf)
 
+## Model-Based Approach
+
+- [HTML](src/T02_model_based/T02.html)
+- [PDF](src/T02_model_based/T02.pdf)
+
 ## References
 
 - VDOs
