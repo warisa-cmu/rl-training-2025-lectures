@@ -24,6 +24,11 @@
 - [HTML](src/T03_model_free/T03.html)
 - [PDF](src/T03_model_free/T03.pdf)
 
+## Functional Approximation
+
+- [HTML](src/T04_functional_approx/T04.html)
+- [PDF](src/T04_functional_approx/T04.pdf)
+
 ## References
 
 - VDOs
