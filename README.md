@@ -29,6 +29,11 @@
 - [HTML](src/T04_functional_approx/T04.html)
 - [PDF](src/T04_functional_approx/T04.pdf)
 
+## Deep Q-Learning
+
+- [HTML](src/T05_deep_q/T05.html)
+- [PDF](src/T05_deep_q/T05.pdf)
+
 ## References
 
 - VDOs

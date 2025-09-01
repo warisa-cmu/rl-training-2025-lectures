@@ -10,6 +10,10 @@
 # npm run html $folder
 # npm run pdf $folder
 
-$folder = "src\T04_functional_approx"
+# $folder = "src\T04_functional_approx"
+# npm run html $folder
+# npm run pdf $folder
+
+$folder = "src\T05_deep_q"
 npm run html $folder
 npm run pdf $folder
