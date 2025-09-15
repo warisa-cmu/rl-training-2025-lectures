@@ -17,3 +17,7 @@
 $folder = "src\T05_deep_q"
 npm run html $folder
 npm run pdf $folder
+
+$folder = "src\T06_policy"
+npm run html $folder
+npm run pdf $folder

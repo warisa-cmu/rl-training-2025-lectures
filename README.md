@@ -34,6 +34,11 @@
 - [HTML](src/T05_deep_q/T05.html)
 - [PDF](src/T05_deep_q/T05.pdf)
 
+## Policy Gradient Methods
+
+- [HTML](src/T06_policy/T06.html)
+- [PDF](src/T06_policy/T06.pdf)
+
 ## References
 
 - VDOs
